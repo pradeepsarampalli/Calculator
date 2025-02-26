@@ -20,7 +20,12 @@ function calculate(){
     if(isNaN(exp)){
         throw new Error("error");
     }
+    if(!Number.isInteger(exp)){
     expression.value=exp.toFixed(2);
+    }
+    else{
+        expression.value=exp;
+    }
     }
     catch(error){
         expression.value="Error";
