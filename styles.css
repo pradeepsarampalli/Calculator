@@ -43,6 +43,7 @@ body{
     justify-content: center;
     margin-left: 5px;
     grid-template-columns: 1fr  1fr 1fr 1fr;
+    column-gap: 3px;
 }
 .keys button{
     border: .1px solid rgba(128, 128, 128, 0.5);
@@ -62,4 +63,15 @@ body{
 }
 .keys .operator{
     background-color: hsl(22, 100%, 72%);
+}
+#zero{
+    grid-column: span 2;
+    width: 90%;
+}
+#equal{
+    grid-row: span 2;
+    height: 95%;
+    width: 63px;
+    column-gap: 5px;
+    margin-left: 5px;
 }

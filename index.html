@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-     <link rel="stylesheet" href="calculator.css">
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Basic Calculator</h1>
@@ -14,27 +14,26 @@
     </div>
     <div class="keys">
         <button class="specials" onclick="clearexp()">AC</button>
-        <button class="operator" onclick="appenddisplay('()')">( )</button>
-        <button class="operator" onclick="appenddisplay('%')">%</button>
+        <button class="specials" onclick="del()">Del</button>
         <button class="operator" onclick="appenddisplay('/')">/</button>
+        <button class="operator" onclick="appenddisplay('+')">+</button>
         <button onclick="appenddisplay('7')">7</button>
         <button onclick="appenddisplay('8')">8</button>
         <button onclick="appenddisplay('9')">9</button>
-        <button class="operator" onclick="appenddisplay('+')">+</button>
+        <button class="operator" onclick="appenddisplay('-')">-</button>
         <button onclick="appenddisplay('4')">4</button>
         <button onclick="appenddisplay('5')">5</button>
         <button onclick="appenddisplay('6')">6</button>
-        <button class="operator" onclick="appenddisplay('-')">-</button>
+        <button class="operator" onclick="appenddisplay('*')">*</button>
         <button onclick="appenddisplay('1')">1</button>
         <button onclick="appenddisplay('2')">2</button>
         <button onclick="appenddisplay('3')">3</button>
-        <button class="operator" onclick="appenddisplay('*')">*</button>
+        <button class="specials" onclick="calculate()" id="equal">=</button>
         <button id="zero" onclick="appenddisplay('0')">0</button>
         <button onclick="appenddisplay('.')">.</button>
-        <button class="specials" onclick="del()">Del</button>
-        <button class="specials" onclick="calculate()">=</button>
+        
     </div>
 </div>
-<script src="calculator.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

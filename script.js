@@ -20,7 +20,7 @@ function calculate(){
     if(isNaN(exp)){
         throw new Error("error");
     }
-    expression.value=exp;
+    expression.value=exp.toFixed(2);
     }
     catch(error){
         expression.value="Error";
