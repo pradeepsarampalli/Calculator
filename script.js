@@ -27,7 +27,7 @@ function calculate(){
         expression.value=exp;
     }
     }
-    catch(error){
+    catch(Error){
         expression.value="Error";
     }
 }
